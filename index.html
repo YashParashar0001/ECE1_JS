@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Main Javascript Tutorial File</title>
+    <style>
+        #container, #buttons{
+            background-color: powderblue;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .box{
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: crimson;
+            border: 2px solid yellow;
+        }
+        .btn{
+            padding: 1rem 1.3rem;
+            background-color: chartreuse;
+            color: darkgreen;
+            border: 2px solid yellow;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" data-attribute="customAttribute">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div id="buttons">
+        <button onclick="onclick()" class="btn">Single Click</button>
+        <button ondblclick="ondblclick()" class="btn">Double Click</button>
+        <button onmousedown="onmousedown()" class="btn">Mouse Down</button>
+        <button onmouseup="onmouseup()" class="btn">Mouse Up</button>
+        <button onmouseover="onmouseover()" class="btn">Mouse Over</button>
+        <button onmouseout="onmouseout()" class="btn">Mouse Out</button>
+    </div>
+    <!-- <script src="./script.js"></script> -->
+    <!-- <script src="./DOM.js"></script> -->
+     <script src="./async.js"></script>
+</body>
+
+</html>
